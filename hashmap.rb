@@ -103,7 +103,7 @@ class HashMap
     @buckets.each do |bucket|
       unless bucket.head.nil? then bucket.clear_all end
     end
-    @entries = 0 
+    @load_level = 0 
   end
 
   def keys
